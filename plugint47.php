@@ -14,6 +14,7 @@ if (! defined('ABSPATH')){
 function activation(){
     //activtion function
     global $wpdb, $table_prefix;
+    add_menu_page( 'Account', 'Account', 'account', 'custom_sc' );
 
 }
 register_activation_hook( __FILE__, 'activation' );
